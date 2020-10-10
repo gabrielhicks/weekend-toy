@@ -3,7 +3,6 @@ const toysURL = "http://localhost:3000/toys/"
 document.addEventListener("DOMContentLoaded", () => {
   const addBtn = document.querySelector("#new-toy-btn");
   const toyFormContainer = document.querySelector(".container");
-
   addBtn.addEventListener("click", () => {
     // hide & seek with the form
     addToy = !addToy;
@@ -28,14 +27,8 @@ function fetchToys() {
     // this function will show each toy and display it inside the HTML tags
     // we are making below/inside
     function addToys(toys) {
-      for(toy of toys) {
-        renderToy(toy);
-      }
-    }
-
-
-    function renderToy(toy) {
       // for each toy inside the hash of toys
+        toys.forEach(toy => {
         console.log(toy);
         
         
@@ -55,7 +48,8 @@ function fetchToys() {
         `
 
         // append div to the toy container
-        toyContainer.append(newDiv)
+        toyContainer.appendChild(newDiv)
+      })
     }
 
 
@@ -78,7 +72,7 @@ function fetchToys() {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
-              Accept: "application/json"
+              "Accept": "application/json"
             },
             body: JSON.stringify(newToy)
           }
@@ -86,11 +80,11 @@ function fetchToys() {
 
           fetch(toysURL, options)
             .then(resp => resp.json())
-            .then(thisToy => renderToy(thisToy))
+            .then(thisToy => addToys(thisToy))
           
         })
-      }
+    }
     fetchToys();
     submitHandler();
 
-  })
+})

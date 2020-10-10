@@ -47,6 +47,30 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "Gabriel Hicks",
+      "image": "https://files.slack.com/files-pri/T02MD9XTF-F01BXJAUDDM/img_19851.jpg",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "name": "Johnnie",
+      "image": "https://www.gstatic.com/tv/thumb/persons/1580/1580_v9_bb.jpg",
+      "likes": 0,
+      "id": 10
+    },
+    {
+      "name": "Mushfi",
+      "image": "https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist",
+      "likes": 0,
+      "id": 11
+    },
+    {
+      "name": "Jessie",
+      "image": "https://vignette.wikia.nocookie.net/p__/images/8/88/Jessie_Toy_Story_3.png/revision/latest?cb=20161023024601&path-prefix=protagonist",
+      "likes": 0,
+      "id": 12
     }
   ]
 }
